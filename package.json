@@ -1,0 +1,38 @@
+{
+  "name": "injectx",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon",
+    "build": "tsc -p .",
+    "publish": "npm run build & npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tareksalem/injectX.git"
+  },
+  "keywords": [
+    "dependency-injection",
+    "typescript-dependency-injection",
+    "di-container",
+    "di",
+    "functional-programming-di"
+  ],
+  "author": "Tarek Salem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tareksalem/injectX/issues"
+  },
+  "homepage": "https://github.com/tareksalem/injectX#readme",
+  "description": "A dependency injection package for javascript/typescript functional programming",
+  "devDependencies": {
+    "@types/node": "^20.2.3",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  }
+}
