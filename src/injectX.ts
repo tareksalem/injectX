@@ -61,7 +61,10 @@ export class Container {
     service: Constructable<T> | T,
     options: IDIServiceOptions = {},
   ) {
-    const key = options.name || (service as any).name;
+    if (service === undefined) {
+      return this;
+    }
+    const key = options.name || (service as any)?.name;
     const injectableType = getInjectableType(service);
     const settings: IDependency<T> = {
       name: key,
